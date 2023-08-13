@@ -82,6 +82,14 @@ spec:
             name: SERVICE_NAME
             port:
               number: 60000
+      - path: /adminzone
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: service_specific
+            port:
+              number: 9000
+
 
 # Manages certificate for GKE
 
